@@ -23,3 +23,11 @@ services:
     <<: *service
     container_name: beacond
     command: /usr/bin/beacond -logtostderr=true -v=0
+  test1:
+    <<: *service
+    container_name: test1
+    command: sleep infinity
+  test2:
+    <<: *service
+    container_name: test2
+    command: sleep infinity
